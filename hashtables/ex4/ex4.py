@@ -7,7 +7,7 @@ def has_negatives(a):
     v = []
 
     for num in a:
-        cache[num] = 1
+        cache[num] = v
         if num != 0 and -num in cache:
             v.append(abs(num))
     return v
