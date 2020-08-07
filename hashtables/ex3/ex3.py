@@ -12,7 +12,9 @@ def intersection(arrays):
                 cache[num] = result
             else:
                 result.append(num)
-    result = list(dict.fromkeys(result, intersection))
+    result = list(dict.fromkeys(result, 0))
+    
+ 
 
     return result
 
@@ -25,4 +27,5 @@ if __name__ == "__main__":
     arrays.append(list(range(3000000, 4000000)) + [1, 2, 3])
 
     print(intersection(arrays))
-# https://www.programiz.com/python-programming/methods/dictionary/fromkeys
+# https://www.geeksforgeeks.org/python-get-dictionary-keys-as-a-list/
+# https://stackoverflow.com/questions/3869487/how-do-i-create-a-dictionary-with-keys-from-a-list-and-values-defaulting-to-say
